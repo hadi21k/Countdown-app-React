@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import CountdownTimer from "./components/CountdownTimer";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex items-center w-screen h-screen bg-red-600 justify-center">
+      <CountdownTimer countdownTimesStampMs={1656795600000} />
     </div>
   );
-}
+};
 
 export default App;
